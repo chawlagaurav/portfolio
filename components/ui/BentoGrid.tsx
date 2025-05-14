@@ -67,7 +67,7 @@ export const BentoGridItem = ({
 
   const handleCopy = () => {
     const text = "chawlagauravv@gmail.com";
-
+    navigator.clipboard.writeText(text);
     setCopied(true);
   };
 
@@ -136,8 +136,8 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
+          {/* for the github 3d globe && <GridGlobe /> */}
+          {id === 2}
 
           {/* Tech stack list div */}
           {id === 3 && (
